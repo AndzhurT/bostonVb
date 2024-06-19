@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/*CSS Variables */
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --primary-color: #0652dd;
+    --secondary-color: #ea2027;
+    --line-height: 1.7rem;
+    --transition: 0.4s ease-in;
+}
+
+/*Smooth scroll effects */
+html {
+    scroll-behavior: smooth;
+}
+
+/*Resets; resets the whole margins to 0 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+}
+
+/*Body styling */
+body {
+    font-family: "Roboto", sans-serf;
+}
+
+/*Items listed styling */
+ul li {
+    list-style-type: none;
+}
+
+/*Text decorators */
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+.Volleyball {
+    color: var(--secondary-color);
+}
+
+/*Unchangeable */
+.fas {
+    color: var(--primary-color);
+}
+
+/*Make a navbar items appear at the top */
+nav {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2rem;
+}
+
+.nav-link {
+    font-weight: var(--bold-font);
+}
+
+.intro-text h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.intro-text h3 {
+    margin-bottom: 0.5rem;
+}
+
+.vball p {
+    line-height: var(--line-height);
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+    padding: 10px;
+}
+
+.play {
+    color: var(--primary-color)
+}
+
+/*Buttons */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: rem;
+}
+
+iframe {
+    max-width: 30rem;
+    border-top: 40px groove var(--primary-color);
+    border-bottom: 40px groove var(--primary-color);
+    border-right: 28px solid var(--primary-color);
+    border-left: 28px solid var(--primary-color);
+    border-radius: 50px;
+}
+
+hr {
+    margin-top: 5rem;
+    padding: 1px;
+    height: 1px;
+    width: 60%;
+    background-color:#000000;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Optional: if you want buttons to wrap in case of limited space */
+}
+
+.map-btn, .events-btn, .wrk-btn, .chat-btn {
+    background-color: var(--secondary-color);
+    margin-right: 1.5rem;
+    margin-top: 4rem;
+    display: inline-block;
+    padding: 3rem 2.5rem;
+    border: none;
+    font-size: 2rem;
+    border-radius: 40px;
+}
+
+.map-btn:hover, .events-btn:hover, .wrk-btn:hover, .chat-btn:hover {
+    background-color: #f1262d;
+    color: #fff;
+}
+
+/* Remove the right margin for the last button to avoid extra space */
+.button-container button:last-child {
+    margin-right: 0;
+}
+
